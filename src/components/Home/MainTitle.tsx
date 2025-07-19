@@ -5,13 +5,22 @@ import { AudienceResponse } from "./AudienceResponse"
 export const MainTitle = () => {
     return (
         <div className="h-fit w-fit px-5 text-center flex flex-col items-center justify-center gap-5.5">
-            <h1 className="text-[42px] leading-12 font-bold font-sans">Double Your Learning with NoteFlow<sup className="text-2xl">AI</sup></h1>
+            <h1 className="text-[40px] leading-12 font-bold font-sans">Double Your Learning with NoteFlow<sup className="text-2xl">AI</sup></h1>
             <p className="text-base px-2 font-medium text-zinc-500 tracking-wide font-sans">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate maiores magni explicabo qui quod, quidem beatae ea quaerat! Nulla, dicta.</p>
             <div className="w-full py-5 h-fit flex flex-col gap-5 items-center justify-center">
                 <CreateFreeNoteButton />
                 <WatchDemoButtom />
             </div>
             <AudienceResponse />
+            <div className="h-[15rem] py-5 w-full flex items-center justify-center relative">
+                <div className="h-32 w-32 absolute transition-all spin">
+                    <span className="h-24 w-24 absolute top-0 left-0 bg-emerald-500 rounded-full blur-3xl"></span>
+                    <span className="h-24 w-24 absolute bottom-0 right-0 bg-fuchsia-500 rounded-full blur-3xl"></span>
+                </div>
+                <div className="video-border-wrapper">
+                    <video className="video-content border-3 border-orange-500" src={'https://player.vimeo.com/progressive_redirect/playback/1064689144/rendition/1080p/file.mp4?loc=external&log_user=0&signature=9769e12e649f9faf25294a7405057fbe410fb0ab4ab24a6575ad652b3b11ff57&user_id=101816034'} autoPlay muted />
+                </div>
+            </div>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export const Navbar = () => {
     return(
-        <nav className="h-16 w-full flex shadow sticky top-0 left-0 items-center justify-between px-4 bg-white">
+        <nav className="h-16 w-full flex shadow sticky top-0 left-0 items-center justify-between px-4 bg-white z-100">
             {/* Navigation Logo */}
             <div className="h-full w-fit flex items-center gap-4">
                 <img className="h-8" src={'https://cdn.prod.website-files.com/61ba09162b87002e87715b91/61bb125944d9e0417af764a9_perspective-icon-logo.avif'} alt="#Logo"/>

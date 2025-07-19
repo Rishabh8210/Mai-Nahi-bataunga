@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/Common/Navbar";
 import { MainTitle } from "@/components/Home/MainTitle";
-import Image from "next/image";
 
 export default function Home() {
   return (
